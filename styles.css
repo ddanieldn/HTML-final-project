@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/originals/1f/58/32/1f5832186ffd64058efad2a3a810d006.gif');
+    background-size: cover;
+    /* Ensures the image covers the whole screen */
+    background-attachment: fixed;
+    /* Keeps the background fixed during scroll */
+    background-position: center;
+    /* Centers the image */
+}
+
+
+#contact-us {
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+#contact-us h2 {
+    color: #333;
+}
+
+#contact-us p {
+    color: #666;
+}
+
+
+button.add-to-cart {
+    background-color: #2ECC71;
+    /* A fresh, outdoor green color */
+    border: none;
+    border-radius: 12px;
+    /* Rounded corners */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+}
+
+button.add-to-cart:hover {
+    background-color: #27AE60;
+    /* Darken on hover */
+}
+
+button.add-to-cart:active {
+    background-color: #229954;
+}
+
+button.add-to-cart {
+    margin-right: 8px;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.product-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.price {
+    text-align: center;
+    color: #333;
+}
+
+/* For carousel on the left and text on the right */
+.carousel-content {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container {
+    flex: 1;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Product Carousel */
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+
+}
+
+
+.modal-content {
+    background-color: #f9f9f9;
+    /* Lighter background */
+    color: #333;
+    /* Text color */
+}
+
+.modal-footer .btn-primary {
+    background-color: #007bff;
+    /* Bootstrap default blue */
+    border-color: #007bff;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+
+button.add-to-cart {
+    background-color: #2ECC71;
+    /* A fresh, outdoor green color */
+    border: none;
+    border-radius: 12px;
+    /* Rounded corners */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 80px;
+}
+
+button.add-to-cart:hover {
+    background-color: #27AE60;
+    /* Darken on hover */
+}
+
+button.add-to-cart:active {
+    background-color: #229954;
+}
+
+button.add-to-cart i {
+    margin-right: 8px;
+}

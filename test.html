@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hiking Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<script src="script.js"></script>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid d-flex justify-content-end align-items-center">
+            <a class="navbar-brand mb-0 h1" href="#">Slick</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fjallraven">Fjallraven</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Columbia">Columbia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Jackwolfskin">Jack Wolfskin</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <a class="nav-link" href="#contact-us">Contact Us</a>
+                    </li>
+                    <li class="nav-item"></li>
+                    <!-- Cart Icon with Modal Trigger -->
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="bi bi-cart-fill"></i> Cart <span id="cart-count">(0)</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit" style="color: brown;">Search</button>
+                        </form>
+                    </li>
+                    <!-- Products or list to filter -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel and About Section -->
+    <div class="container my-5">
+        <div class="carousel-content">
+            <!-- Carousel -->
+            <div id="carouselExampleInterval" class="carousel slide carousel-container" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://img.freepik.com/premium-photo/men-wearing-lightweight-hiking-jacket-functional-sleek_665569-13571.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://www.inov8.com/media/catalog/product/cache/b8d9a150cfe217bc9f0ed66db60639ed/0/0/001127-bkga-01-performance-hybrid-jacket-womens-black-graphite-1_u5rt0gop3eylxutx.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://lovellcdn.b-cdn.net/products/1790878_13.jpg?width=700" class="d-block w-100"
+                            alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- About Text -->
+            <div class="about-text">
+                <h1 style="font-weight: bold;">About Our Store</h1>
+                <p>Welcome to your ultimate destination for premium hiking jackets from top outdoor brands, curated for
+                    those who seek adventure and thrill in the great outdoors. Our collection brings together the best
+                    hiking jackets, combining durability, functionality, and style. Whether you're trekking through
+                    rugged trails or embarking on your next wilderness expedition, we've got the perfect jacket to suit
+                    your needs. Our mission is to inspire and equip passionate adventurers with gear from trusted brands
+                    that empower them to conquer the elements, push their limits, and embrace the spirit of exploration.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="product-list">
+        <!-- Fjallraven Brand Section -->
+        <div id="fjallraven" class="container my-5">
+            <h2 class="text-center mb-4">Fjallraven</h2>
+            <div id="fjallravenCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://www.fjallraven.com/49b0ae/globalassets/catalogs/fjallraven/f8/f822/f82279/f625/skogso_padded_jacket_m_82279-625_a_main_fjr.jpg?width=680&height=680&rmode=BoxPad&bgcolor=fff&quality=100"
+                                    class="d-block w-100" alt="Skogsö Padded Jacket M">
+                                <div class="product-title">Skogsö Padded Jacket M</div>
+                                <div class="price">$365.00</div>
+                                <button class="add-to-cart" data-name="Skogsö Padded Jacket M" data-price="365">
+                                    Add to Cart
+                                </button>
+
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.fjallraven.com/49bfc8/globalassets/catalogs/fjallraven/f8/f816/f81698/f030/7392158906925_ss18_a_skogsoe_jacket_21.jpg?width=680&height=680&rmode=BoxPad&bgcolor=fff&quality=100"
+                                    class="d-block w-100" alt="Skogsö Jacket M">
+                                <div class="product-title">Skogsö Jacket M</div>
+                                <div class="price">$365.00</div>
+                                <button class="add-to-cart" data-name="Skogsö Jacket M" data-price="365">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.fjallraven.com/495cc5/globalassets/catalogs/fjallraven/f8/f816/f81679/f555/7392158953240_ss18_srqz_sten_jacket_21.jpg?width=680&height=680&rmode=BoxPad&bgcolor=fff&quality=100"
+                                    class="d-block w-100" alt="Sten Jacket M">
+                                <div class="product-title">Sten Jacket M</div>
+                                <div class="price">$230.00</div>
+                                <button class="add-to-cart" data-name="Sten Jacket M" data-price="230">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://www.fjallraven.com/49d02c/globalassets/catalogs/fjallraven/f8/f871/f87122/f550/7323450467289_fw18_a_greenland_winter_jacket_m_fjaellraeven_21.jpg?width=680&height=680&rmode=BoxPad&bgcolor=fff&quality=100"
+                                    class="d-block w-100" alt="Greenland Winter Jacket M">
+                                <div class="product-title">Greenland Winter Jacket M</div>
+                                <div class="price">$325.00</div>
+                                <button class="add-to-cart" data-name="Greenland Winter Jacket M" data-price="325">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.fjallraven.com/49cff1/globalassets/catalogs/fjallraven/f8/f896/f89644/f357/kiruna_padded_parka_w_89644-357_a_main_fjr.jpg?width=680&height=680&rmode=BoxPad&bgcolor=fff&quality=100"
+                                    class="d-block w-100" alt="Kiruna Padded Parka W">
+                                <div class="product-title">Kiruna Padded Parka W</div>
+                                <div class="price">$360.00</div>
+                                <button class="add-to-cart" data-name="Kiruna Padded Parka W" data-price="360"> Add to
+                                    Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.fjallraven.com/4ab183/globalassets/catalogs/fjallraven/f1/f145/f14500/f1450013/f14500131/f543/vardag_rain_parka_w_14500131-543_a_main_fjr.jpg?width=680&height=680&rmode=BoxPad&bgcolor=fff&quality=100"
+                                    class="d-block w-100" alt="Vardag Rain Parka W">
+                                <div class="product-title">Vardag Rain Parka W</div>
+                                <div class="price">$350.00</div>
+                                <button class="add-to-cart" data-name="Vardag Rain Parka W" data-price="350"> Add to
+                                    Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#fjallravenCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#fjallravenCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--Columbia brand section-->
+        <div id="Columbia" class="container my-5">
+            <h2 class="text-center mb-4">Columbia</h2>
+            <div id="ColumbiaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/2097221_224_a1_om?wid=768&hei=806&v=1726077026"
+                                    class="d-block w-100" alt="Powderkeg™ II Remastered Interchange Jacket">
+                                <div class="product-title">Powderkeg™ II Remastered Interchange Jacket</div>
+                                <div class="price">$280.00</div>
+                                <button class="add-to-cart" data-name="Powderkeg™ II Remastered Interchange Jacket"
+                                    data-price="280"> Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/2096911_681_a2_om?wid=768&hei=806&v=1726077026"
+                                    class="d-block w-100" alt="Men's Hikebound™ II Interchange Jacket">
+                                <div class="product-title">Men's Hikebound™ II Interchange Jacket</div>
+                                <div class="price">$180.00</div>
+                                <button class="add-to-cart" data-name="Men's Hikebound™ II Interchange Jacket"
+                                    data-price="180"> Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/2096901_366_f_om?wid=768&hei=806&v=1726077026"
+                                    class="d-block w-100" alt="Men's Bugaboo™ III Fleece Interchange Jacket">
+                                <div class="product-title">Men's Bugaboo™ III Fleece Interchange Jacket</div>
+                                <div class="price">$210.00</div>
+                                <button class="add-to-cart" data-name="Men's Bugaboo™ III Fleece Interchange Jacket"
+                                    data-price="210"> Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/2125571_397_f_om?wid=768&hei=806&v=1726077026"
+                                    class="d-block w-100" alt="Women's Karis Gale™ II Long Jacket">
+                                <div class="product-title">Women's Karis Gale™ II Long Jacket</div>
+                                <div class="price">$105.00</div>
+                                <button class="add-to-cart" data-name="Women's Karis Gale™ II Long Jacket"
+                                    data-price="105">
+                                    Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/2089731_224_a2_om?wid=768&hei=806&v=1726077026"
+                                    class="d-block w-100" alt="Women's Payton Pass™ II Interchange Jacket">
+                                <div class="product-title">Women's Payton Pass™ II Interchange Jacket</div>
+                                <div class="price">$280.00</div>
+                                <button class="add-to-cart" data-name="Women's Payton Pass™ II Interchange Jacket"
+                                    data-price="280"> Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://columbia.scene7.com/is/image/ColumbiaSportswear2/1907601_397_f_om?wid=768&hei=806&v=1726077026s"
+                                    class="d-block w-100" alt="Women's Columbia Lodge™ Sherpa Full Zip Fleece Jacket">
+                                <div class="product-title">Women's Columbia Lodge™ Sherpa Full Zip Fleece Jacket</div>
+                                <div class="price">$80.00</div>
+                                <button class="add-to-cart"
+                                    data-name="Women's Columbia Lodge™ Sherpa Full Zip Fleece Jacket" data-price="80">
+                                    Add
+                                    to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ColumbiaCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ColumbiaCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        <!--Jack Wolfskin brand section-->
+        <div id="Jackwolfskin" class="container my-5">
+            <h2 class="text-center mb-4">Jack Wolfskin</h2>
+            <div id="JackCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://www.jack-wolfskin.com/dw/image/v2/AAQL_PRD/on/demandware.static/-/Library-Sites-JackWolfskin_SharedContentLib/default/dw1610604a/background/bone5/1115134_c0415_1-highest-peak-3l-jkt-m-nature-blue-27.jpg?ox=0&oy=0&oimg=https%3A%2F%2Fwww.jack-wolfskin.com%2Fdw%2Fimage%2Fv2%2FAAQL_PRD%2Fon%2Fdemandware.static%2F-%2FSites-22021_JW_Master%2Fdefault%2Fdw8117cabf%2Flarge%2F1115134_c0415_1-highest-peak-3l-jkt-m-nature-blue.png%3Fsw%3D612%26sh%3D882&sfrm=png&sw=612&sh=882"
+                                    class="d-block w-100" alt="Highest Peak 3l Jkt M">
+                                <div class="product-title">Highest Peak 3l Jkt M</div>
+                                <div class="price">$280.00</div>
+                                <button class="add-to-cart" data-name="Highest Peak 3l Jkt M" data-price="280"> Add to
+                                    Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.jack-wolfskin.com/dw/image/v2/AAQL_PRD/on/demandware.static/-/Library-Sites-JackWolfskin_SharedContentLib/default/dwf15a705c/background/bone5/1307771_4136_1-alpspitze-hoody-m-slate-green-27.jpg?ox=0&oy=0&oimg=https%3A%2F%2Fwww.jack-wolfskin.com%2Fdw%2Fimage%2Fv2%2FAAQL_PRD%2Fon%2Fdemandware.static%2F-%2FSites-22021_JW_Master%2Fdefault%2Fdw0edf84ba%2Flarge%2F1307771_4136_1-alpspitze-hoody-m-slate-green.png%3Fsw%3D612%26sh%3D882&sfrm=png&sw=612&sh=882"
+                                    class="d-block w-100" alt="Alpspitze Hoody M">
+                                <div class="product-title">Alpspitze Hoody M</div>
+                                <div class="price">$219.95</div>
+                                <button class="add-to-cart" data-name="Alpspitze Hoody M" data-price="150"> Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.jack-wolfskin.com/dw/image/v2/AAQL_PRD/on/demandware.static/-/Library-Sites-JackWolfskin_SharedContentLib/default/dwb5d13ce4/background/bone5/1115321_1010_1-troposphere-ins-jkt-m-night-blue-27.jpg?ox=0&oy=0&oimg=https%3A%2F%2Fwww.jack-wolfskin.com%2Fdw%2Fimage%2Fv2%2FAAQL_PRD%2Fon%2Fdemandware.static%2F-%2FSites-22021_JW_Master%2Fdefault%2Fdw28e0ff3c%2Flarge%2F1115321_1010_1-troposphere-ins-jkt-m-night-blue.png%3Fsw%3D612%26sh%3D882&sfrm=png&sw=612&sh=882"
+                                    class="d-block w-100" alt="Troposphere Ins Jkt M
+                            ">
+                                <div class="product-title">Troposphere Ins Jkt M
+                                </div>
+                                <div class="price">$90.00</div>
+                                <button class="add-to-cart" data-name="Troposphere Ins Jkt M" data-price="90">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://www.jack-wolfskin.com/dw/image/v2/AAQL_PRD/on/demandware.static/-/Library-Sites-JackWolfskin_SharedContentLib/default/dw69bdb6cf/background/bone5/A61825_J0127_1-MA100-eagle-peak-2l-jkt-w-mineral-red-27.jpg?ox=0&oy=0&oimg=https%3A%2F%2Fwww.jack-wolfskin.com%2Fdw%2Fimage%2Fv2%2FAAQL_PRD%2Fon%2Fdemandware.static%2F-%2FSites-22021_JW_Master%2Fdefault%2Fdwdcabfbe9%2Flarge%2FA61825_J0127_1-MA100-eagle-peak-2l-jkt-w-mineral-red.png%3Fsw%3D612%26sh%3D882&sfrm=png&sw=612&sh=882"
+                                    class="d-block w-100" alt="Eagle Peak 2l Jkt W">
+                                <div class="product-title">Eagle Peak 2l Jkt W</div>
+                                <div class="price">$219.95</div>
+                                <button class="add-to-cart" data-name="Eagle Peak 2l Jkt W" data-price="75"> Add to
+                                    Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.jack-wolfskin.com/dw/image/v2/AAQL_PRD/on/demandware.static/-/Library-Sites-JackWolfskin_SharedContentLib/default/dwc6349312/background/bone5/A61712_A0030_1-MA100-windland-coat-w-anis-27.jpg?ox=0&oy=0&oimg=https%3A%2F%2Fwww.jack-wolfskin.com%2Fdw%2Fimage%2Fv2%2FAAQL_PRD%2Fon%2Fdemandware.static%2F-%2FSites-22021_JW_Master%2Fdefault%2Fdw815a03fe%2Flarge%2FA61712_A0030_1-MA100-windland-coat-w-anis.png%3Fsw%3D612%26sh%3D882&sfrm=png&sw=612&sh=882"
+                                    class="d-block w-100" alt="Windland Coat W">
+                                <div class="product-title">Windland Coat W</div>
+                                <div class="price">$189.95</div>
+                                <button class="add-to-cart" data-name="Windland Coat W" data-price="150"> Add to Cart
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://www.jack-wolfskin.com/dw/image/v2/AAQL_PRD/on/demandware.static/-/Library-Sites-JackWolfskin_SharedContentLib/default/dw337fbb9a/background/bone5/1307981_6000_1-andur%20jkt%20w-black-27.jpg?ox=0&oy=0&oimg=https%3A%2F%2Fwww.jack-wolfskin.com%2Fdw%2Fimage%2Fv2%2FAAQL_PRD%2Fon%2Fdemandware.static%2F-%2FSites-22021_JW_Master%2Fdefault%2Fdwb812aefc%2Flarge%2F1307981_6000_1-andur%20jkt%20w-black.png%3Fsw%3D612%26sh%3D882&sfrm=png&sw=612&sh=882"
+                                    class="d-block w-100" alt="Andur Jkt W">
+                                <div class="product-title">Andur Jkt W</div>
+                                <div class="price">$100.00</div>
+                                <button class="add-to-cart" data-name="Andur Jkt W" data-price="100"> Add
+                                    to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#JackCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#JackCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items" class="list-group"></ul>
+                    <div class="mt-3">
+                        <strong>Total: $<span id="cart-total">0</span></strong>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#checkoutModal">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Order Confirmation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for your purchase!</p>
+                    <p>Your order has been placed and will be processed shortly.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have any questions? We'd love to hear from you!</p>
+        <form id="contactForm">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <!-- Button to trigger the modal after submitting the form -->
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <!-- Modal -->
+        <div id="finish" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Message Sent!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for the message!</p>
+                        <p>We will reply as soon as possible!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+
+</html>
