@@ -1,14 +1,14 @@
-body {
+/*body {
     margin: 0;
     padding: 0;
     background: url('https://i.pinimg.com/originals/1f/58/32/1f5832186ffd64058efad2a3a810d006.gif');
     background-size: cover;
     /* Ensures the image covers the whole screen */
-    background-attachment: fixed;
-    /* Keeps the background fixed during scroll */
-    background-position: center;
-    /* Centers the image */
-}
+/*background-attachment: fixed;
+/* Keeps the background fixed during scroll */
+/*background-position: center;*/
+/* Centers the image */
+/*}*/
 
 
 #contact-us {
@@ -26,32 +26,6 @@ body {
 }
 
 
-button.add-to-cart {
-    background-color: #2ECC71;
-    /* A fresh, outdoor green color */
-    border: none;
-    border-radius: 12px;
-    /* Rounded corners */
-    color: white;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 150px;
-}
-
-button.add-to-cart:hover {
-    background-color: #27AE60;
-    /* Darken on hover */
-}
-
-button.add-to-cart:active {
-    background-color: #229954;
-}
-
-button.add-to-cart {
-    margin-right: 8px;
-}
 
 .carousel-item img {
     height: 300px;
@@ -119,28 +93,267 @@ button.add-to-cart {
 
 
 button.add-to-cart {
-    background-color: #2ECC71;
-    /* A fresh, outdoor green color */
-    border: none;
-    border-radius: 12px;
-    /* Rounded corners */
-    color: white;
+    background-color: #000;
+    color: #fff;
     padding: 10px 20px;
-    font-size: 16px;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 80px;
+    font-size: 18px;
 }
 
 button.add-to-cart:hover {
-    background-color: #27AE60;
-    /* Darken on hover */
+    background-color: #333;
 }
 
+
 button.add-to-cart:active {
-    background-color: #229954;
+    background-color: #000;
 }
 
 button.add-to-cart i {
     margin-right: 8px;
+}
+
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-items {
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.cart-item-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cart-summary {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+#checkoutButton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#checkoutButton:hover {
+    background-color: #333;
+}
+
+/* Product grid layout for hiking jackets */
+.hiking-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 columns */
+    gap: 5px;
+    margin: 0px auto;
+    max-width: 1200px;
+    /* Optional, for centering and limiting page width */
+    padding: 0 20px;
+}
+
+/* Styling for each product card */
+.hiking-item {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* Initial border color */
+    transition: border-color 0.3s ease;
+    /* Smooth transition effect */
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.hiking-item:hover {
+    border-color: black;
+    /* Subtle hover effect */
+}
+
+.hiking-item-image {
+    width: 100%;
+    height: 250px;
+    /* Define a fixed height for image containers */
+    overflow: hidden;
+}
+
+.hiking-item-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+/* Product info and styling */
+.product-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 15px 0 10px;
+}
+
+.product-description {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Main container for both filter and product grid */
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    /* 250px for filter, remaining space for products */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+#details {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button #details:hover {
+    color: #ddd;
+}
+
+.brand p {
+    text-align: left;
+
+}
+
+.hiking-item h2 {
+    font-size: 20px;
+}
+
+/* Styling for the Contact Us section */
+.contact-us-container {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    border-radius: 0;
+    border: 1px solid #ccc;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.contact-details {
+    padding-left: 20px;
+}
+
+.contact-details h5 {
+    margin-top: 20px;
+}
+
+
+footer {
+    margin-top: 50px;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+footer .contact-details p {
+    margin-bottom: 10px;
+}
+
+footer .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+footer .btn:hover {
+    background-color: #0056b3;
+}
+
+#customer-reviews {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+
+h5.text-danger {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* For screens larger than 768px (tablets and desktops) */
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .product-container {
+        flex-direction: row;
+    }
+}
+
+/* For screens smaller than 768px (mobile devices) */
+@media (max-width: 767px) {
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .product-details h2 {
+        font-size: 1.5rem;
+    }
 }
