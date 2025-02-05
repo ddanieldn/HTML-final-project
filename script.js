@@ -74,3 +74,4 @@ function removeFromCart(index) {
     updateCartCount();
     renderCart();
 }
+
